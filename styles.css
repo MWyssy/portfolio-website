@@ -93,6 +93,12 @@ h4 {
   font-weight: 100;
 }
 
+h5 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5rem;
+  color:rgba(219, 106, 31, 0.912);
+}
+
 /* Main Body */
 
 img {
@@ -138,6 +144,14 @@ hr {
   justify-content: center;
   align-items: center;
   margin-bottom: -15px;
+}
+
+#code {
+  display: flex;
+  position: absolute;
+  top: 85vh;
+  left: 0;
+  padding: 15px;
 }
 
 #projects {
@@ -203,6 +217,10 @@ hr {
   color: rgb(100, 100, 100)
 }
 
+.code-text {
+  flex-wrap: wrap;
+}
+
 .quote {
   font-size: 4rem;
   text-align: center;
@@ -253,7 +271,7 @@ hr {
   justify-content: flex-start;
   text-align: center;
   font-family: Montserrat, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
   padding: 10%;
   color: rgba(0, 0, 0, 0);
@@ -273,12 +291,6 @@ hr {
 
 
 /*Media Queries*/
-/* 1200px */
-@media (min-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
 
 @media (min-width: 0px) {
 
@@ -286,6 +298,10 @@ hr {
   display: grid;
   gap: 5vw;
   grid-template-columns: 1fr;
+  }
+
+  html {
+    font-size: 40%;
   }
 }
 
@@ -296,6 +312,10 @@ hr {
   gap: 5vw;
   grid-template-columns: 1fr 1fr;
   }
+
+  html {
+    font-size: 50%;
+  }
 }
 
 @media (min-width: 1008px) {
@@ -304,5 +324,9 @@ hr {
   display: grid;
   gap: 5vw;
   grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  html {
+    font-size: 60%;
   }
 }
